@@ -108,7 +108,7 @@ extension Downloadable where Self: UIImageView {
                                 let cachedImage = CachedImage(image: image, appliedOptions: appliedOptions)
                                 MemoryManager.shared.saveImageToMemory(.diskCache, cachedImage, for: url)
                                 
-                                //почему то при одном этом параметре не закругляет картинки?
+                                
                             case .circle:
                                 image = image.maskRoundedImage(image: image, radius: imageRadius) ?? image
                                 appliedOptions.append(.circle)
